@@ -1,5 +1,6 @@
 // Background colours
-$backgroundColour: #ffffff !default;
+$background-image: url(https://cdn.sstatic.net/Sites/math/img/site-background-image.png?v=09a720444763);
+$backgroundColour: #ccc5c5b2 !default;
 $codeBackgroundColour: #fafafa !default;
 $featureBackgroundColour: #f9fafa !default;
 $accentColour: #05bf85 !default;
@@ -14,10 +15,12 @@ $captionColour: #a8adac !default;
 $white: #ffffff !default;
 
 // Typography
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
 $bodytype: (
-  font-family: "Georgia, serif",
-  regular: 400,
-  bold: 700,
+  font-family: $base-font-family,
+  regular: 300,
+  bold: 500,
   italic: italic,
   cap-height: 0.75
 ) !default;

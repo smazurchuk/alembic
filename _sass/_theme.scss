@@ -1,6 +1,7 @@
 // Structural elements
 body {
-  background: $backgroundColour;
+  background-image: $background-image;
+  background-color: $backgroundColour;
   color: $bodyColour;
   height: 100%;
   display: flex;
@@ -10,14 +11,13 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
 }
 
 
-// Header, feature and footer
-.header,
-.footer {
+// Header, feature
+.header {
   .nav {
     text-align: right;
   }
@@ -455,3 +455,86 @@ pre code {
     overflow-x: scroll;
   }
 }
+
+
+// Minima Footer (smazurchuk added)
+/**
+ * Site footer
+ */
+ $base-font-size:   16px !default;
+ $spacing-unit:     30px !default;
+
+ @mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+/**
+ * Clearfix
+ */
+ %clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+ .site-footer {
+  border-top: 1px solid;
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.footer-heading-home {
+  color: #f3f3f3;
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+.footer-col-2-new {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+  margin: auto;
+  margin-top:-5%;
+  display: flex;
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
