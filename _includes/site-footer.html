@@ -1,4 +1,48 @@
-<footer class="site-footer h-card">
+
+<footer class="footer">
+  <div class="container">
+    <div class="copyright  typeset">
+      <small class="small">&copy; {{ site.title }} {{ site.time | date: '%Y' }}</small>
+    </div>
+
+    <div>
+      <img src="/favicon.png" width="150" style="max-width: none;">
+    </div>
+    <div>
+      {{- site.description | escape -}}<      
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="column">
+      <ul>
+        <li><h2 class="footer-heading">{{ site.title | escape }}</h2></li>
+        <li>{{ site.author | escape }}</li>
+        <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <img src="/favicon.png" width="150" style="max-width: none;">
+    </div>
+    <div class="column">
+      <ul>
+        <li>{{- site.description | escape -}}</li>
+        <li>{%- include social.html -%} </li>
+      </ul>
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+<!-- <footer class="site-footer h-card">
   <div class="container">
 
 
@@ -40,4 +84,4 @@
   
     </div>
   </div>
-</footer>
+</footer> -->

@@ -42,7 +42,7 @@ paginate: 10 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 author: Stephen Mazurchuk
 description: >- # this means to ignore newlines until "baseurl:"
-  A site to document work flows, ideas, and musings
+  A site to document work flows, ideas, and musings 
 
 github_username:  smazurchuk
 google_analytics: UA-152966807-1

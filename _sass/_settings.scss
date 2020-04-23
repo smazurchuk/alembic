@@ -1,9 +1,10 @@
 // Background colours
 // $background-image: url(https://cdn.sstatic.net/Sites/math/img/site-background-image.png?v=09a720444763);
+$code-background:  #272822;
 $background-image: url(/assets/gpaper2.png);
 
 $backgroundColour: #f8f5f0af !default;
-$codeBackgroundColour: #fafafa !default;
+$codeBackgroundColour: $code-background;
 $featureBackgroundColour: #f9fafa !default;
 $accentColour: #05bf85 !default;
 
