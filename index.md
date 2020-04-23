@@ -3,7 +3,7 @@ title: Noether's Nonsense
 feature_text: |
   <div class="h1_2"> Noether's Nonsense </div>
   A personal site
-feature_image: /assets/mkeNight.jpg
+feature_image: /assets/mkeNight2.jpg
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 layout: page
 homepage: true

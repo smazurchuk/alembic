@@ -9,13 +9,13 @@
 
   {% if page.homepage %}
     <div class="feature"{% if feature_image %} style="background-image: url({{ feature_image }})"{% endif %}>
-      <div class="container typeset homeFeature" style="color: antiquewhite; justify-content: flex-end;"> 
+      <div class="container typeset homeFeature" style="color: antiquewhite; justify-content: flex-end; background: bottom;"> 
         {{ feature_text }}
       </div>
     </div>
   {% elsif feature_text or feature_image  %}
     <div class="feature"{% if feature_image %} style="background-image: url({{ feature_image }})"{% endif %}>
-      <div class="container  typeset">
+      <div class="container  typeset" style="background: bottom;">
         {{ feature_text | markdownify }}
       </div>
     </div>
