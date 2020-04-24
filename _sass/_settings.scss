@@ -2,8 +2,36 @@
 // $background-image: url(https://cdn.sstatic.net/Sites/math/img/site-background-image.png?v=09a720444763);
 $code-background:  #272822;
 $background-image: url(/assets/gpaper2.png);
+$base-font-weight: 400 !default;
+$base-font-size:   16px !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+$code-background:  #272822;
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+$content-width:    1000px !default;
 
-$backgroundColour: #f5d6a0 !default;
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+$grey-color:       #828282; //#828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+$orange-color:     #f66a0a !default;
+
+$table-text-align: left !default;
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+$spacing-unit:     30px !default;
+$backgroundColour: #d0e6f7cb !default;
 $codeBackgroundColour: $code-background;
 $featureBackgroundColour: #a17e69d5 !default;
 $accentColour: #05bf85 !default;
@@ -11,10 +39,10 @@ $accentColour: #05bf85 !default;
 // Text colours
 $headingColour: #242e2b !default;
 $bodyColour: #384743 !default;
-$linkColour: #2022a0 !default;
+$linkColour: #0a669b !default;
 $hoverColour: #008000 !default;
 $focusColour: #fa407a !default;
-$captionColour: #a8adac !default;
+$captionColour: #434948 !default;
 $white: #ffffff !default;
 
 // Typography
@@ -29,7 +57,7 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  font-family: $base-font-family,
   regular: 400,
   bold: 700,
   cap-height: 0.75
